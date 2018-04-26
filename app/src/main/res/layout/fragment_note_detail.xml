@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/v_colored_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/div_center"/>
+
+    <TextView
+        android:id="@+id/tv_date_and_time_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/div_center"
+        tools:text="2:43AM 09/7/2018"
+        style="@style/Text.Tertiary"/>
+
+    <View
+        android:id="@+id/div_center"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/tv_message_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/div_center"
+        style="@style/Text.Tertiary"
+        tools:text="Check out content like Fragmented Podcast to listen to ideas and opinions of industry experts"/>
+
+</RelativeLayout>
